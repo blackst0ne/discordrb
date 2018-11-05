@@ -1,3 +1,11 @@
+### WHY THIS FORK?
+
+I have conflicts with other gems which have hard requirements of `rest-client` 2.0         
+`discordrb` is hardcoded to use `rest-client >= 2.1.0.rc1`.        
+This fork relaxes discordrb's dependency of `rest-api`. 
+
+----
+
 [![Gem](https://img.shields.io/gem/v/discordrb.svg)](https://rubygems.org/gems/discordrb)
 [![Gem](https://img.shields.io/gem/dt/discordrb.svg)](https://rubygems.org/gems/discordrb)
 [![Build Status](https://travis-ci.org/meew0/discordrb.svg?branch=master)](https://travis-ci.org/meew0/discordrb)

@@ -5,28 +5,28 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'discordrb/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'discordrb'
+  spec.name          = 'discordrb-blackst0ne'
   spec.version       = Discordrb::VERSION
-  spec.authors       = ['meew0']
-  spec.email         = ['']
+  spec.authors       = ['blackst0ne']
+  spec.email         = ['blackst0ne.ru@gmail.com']
 
-  spec.summary       = 'Discord API for Ruby'
+  spec.summary       = 'Discord API for Ruby. Fork by blackst0ne'
   spec.description   = 'A Ruby implementation of the Discord (https://discordapp.com) API.'
-  spec.homepage      = 'https://github.com/meew0/discordrb'
+  spec.homepage      = 'https://github.com/blackst0ne/discordrb'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|examples|lib/discordrb/webhooks)/}) }
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.metadata = {
-    'changelog_uri' => 'https://github.com/meew0/discordrb/blob/master/CHANGELOG.md'
+    'changelog_uri' => 'https://github.com/blackst0ne/discordrb/blob/master/CHANGELOG.md'
   }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'ffi', '>= 1.9.24'
   spec.add_dependency 'opus-ruby'
   spec.add_dependency 'rbnacl', '~> 5.0'
-  spec.add_dependency 'rest-client', '>= 2.1.0.rc1'
+  spec.add_dependency 'rest-client', '~> 2.0'
   spec.add_dependency 'websocket-client-simple', '>= 0.3.0'
 
   spec.add_dependency 'discordrb-webhooks', '~> 3.3.0'
